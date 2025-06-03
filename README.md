@@ -1,21 +1,73 @@
-# Lab Experiments:
+# 🏠 Home Automation System using ESP8266
 
-# PART A
-## Implement the following in NS2/NS3:
+A smart, low-cost IoT-based home automation system that allows users to control appliances remotely via Wi-Fi using a smartphone app and the ESP8266 microcontroller.
 
-1.	Implement three nodes point – to – point network with duplex links between them. Set the queue size, vary the bandwidth and find the number of packets dropped.
-2.	Implement transmission of ping messages/trace route over a network topology consisting of 6 nodes and find the number of packets dropped due to congestion.
-3.	Implement an Ethernet LAN using n nodes and set multiple traffic nodes and plot congestion window for different source / destination.
-4.	Implement simple ESS and with transmitting nodes in wire-less LAN by simulation and determine the performance with respect to transmission of packets.
-5.	Implement and study the performance of GSM on NS2/NS3 (Using MAC layer) or equivalent environment.
-6.	Implement and study the performance of CDMA on NS2/NS3 (Using stack called Call net) or equivalent environment.
+## 🔧 Features
 
-# PART B
-## Implement the following in Java :
+- Remotely control home appliances (e.g., lights, fans)
+- Real-time status monitoring via Blynk app
+- Wi-Fi-based communication using ESP8266
+- Secure and low-power design
+- Easy to set up and modify for additional devices
 
-7.	Write a program for error detecting code using CRC-CCITT (16- bits).
-8.	Write a program to find the shortest path between vertices using bellman-ford algorithm.
-9.	Using TCP/IP sockets, write a client – server program to make the client send the file name and to make the server send back the contents of the requested file if present.
-10.	Write a program on datagram socket for client/server to display the messages on client side, typed at the server side.
-11.	Write a program for simple RSA algorithm to encrypt and decrypt the data.
-12.	Write a program for congestion control using leaky bucket algorithm.
+## 📦 Components Used
+
+- ESP8266 NodeMCU
+- Relay Module (1/2/4 Channel)
+- AC Appliances (Bulb, Fan, etc.)
+- Blynk App (for Android/iOS)
+- Jumper wires, breadboard, power supply
+
+## 🔌 Circuit Diagram
+
+> *(Upload a circuit diagram image here if available)*  
+You can connect each relay IN pin to a digital GPIO pin on the ESP8266. The relay outputs are wired to control the AC appliances.
+
+## 🖥️ Software & Tools
+
+- Arduino IDE
+- Blynk IoT Platform
+- Embedded C/C++
+- ESP8266WiFi & Blynk libraries
+
+## 🚀 Getting Started
+
+1. **Install Arduino IDE**  
+   Download from [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
+
+2. **Add ESP8266 Board**  
+   Go to *Preferences* → Add the following URL to "Additional Board Manager URLs":
+
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
+
+
+3. **Install Required Libraries**  
+- Blynk
+- ESP8266WiFi
+
+4. **Upload the Code**  
+- Open `home_automation.ino`
+- Replace `BLYNK_AUTH_TOKEN`, `WIFI_SSID`, and `WIFI_PASSWORD` with your credentials
+- Select the correct board (NodeMCU 1.0) and port
+- Upload to ESP8266
+
+## 📱 App Setup (Blynk)
+
+- Install Blynk app from Play Store / App Store
+- Create a new project and add buttons linked to digital pins (e.g., D1, D2)
+- Copy the **Auth Token** and paste it into the code
+- Start the project and control appliances with one tap
+
+## 📸 Demo
+
+> *(Insert images or a short demo video link here if available)*  
+Example:  
+![App Screenshot](demo/screenshot.png)
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+> Created with ❤️ by [Saif Ahmed Nandyal](https://github.com/saifacker)
