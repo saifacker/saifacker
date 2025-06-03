@@ -58,12 +58,6 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 - Copy the **Auth Token** and paste it into the code
 - Start the project and control appliances with one tap
 
-## 📸 Demo
-
-> *(Insert images or a short demo video link here if available)*  
-Example:  
-![App Screenshot](demo/screenshot.png)
-
 ## 📜 License
 
 This project is licensed under the MIT License.
